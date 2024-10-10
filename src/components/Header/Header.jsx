@@ -1,4 +1,5 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
+import "./Header.css";
 
 const Header = () => {
   const navItems = [
@@ -34,7 +35,7 @@ const Header = () => {
         >
           {navItems.map((nav) => (
             <li key={nav.id}>
-              <Link to={nav.path}>{nav.name}</Link>
+              <NavLink to={nav.path}>{nav.name}</NavLink>
             </li>
           ))}
         </ul>

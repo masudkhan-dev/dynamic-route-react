@@ -1,7 +1,12 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Heda = ({ heda }) => {
   const { id, title } = heda;
+  const navigate = useNavigate();
+
+  const handleShowDetails = () => {
+    navigate(`/heda/${id}`);
+  };
 
   return (
     <div style={{ border: "2px solid red", padding: "20px", margin: "10px" }}>
@@ -10,6 +15,8 @@ const Heda = ({ heda }) => {
       <Link to={`/heda/${id}`}>
         <button>Show Details</button>
       </Link>
+
+      <button onClick={handleShowDetails}>Click to show details</button>
     </div>
   );
 };

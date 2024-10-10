@@ -12,11 +12,15 @@ import Posts from "./components/Posts/Posts";
 import SinglePost from "./components/SinglePost/SinglePost";
 import Hedas from "./components/Hedas/Hedas";
 import HedaDetails from "./components/HedaDetails/HedaDetails";
+import ErrorPage from "./components/ErrorPage/ErrorPage";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
+    
+    errorElement: <ErrorPage />,
+
     children: [
       {
         path: "/about",
