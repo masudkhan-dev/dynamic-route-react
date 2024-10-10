@@ -5,7 +5,9 @@ const Header = () => {
     { id: 1, name: "Home", path: "/" },
     { id: 2, name: "About", path: "/about" },
     { id: 3, name: "Users", path: "/users" },
-    { id: 4, name: "Contact", path: "/contact" },
+    { id: 4, name: "Posts", path: "/posts" },
+    { id: 5, name: "Hedas", path: "/hedas" },
+    { id: 6, name: "Contact", path: "/contact" },
   ];
 
   return (
